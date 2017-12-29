@@ -7,15 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2522D3821FE6F9AC009EF2FA /* test_fsigned.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2522D37F1FE6F9AB009EF2FA /* test_fsigned.plist */; };
+		2522D3841FE6F9AC009EF2FA /* test_fsigned in Resources */ = {isa = PBXBuildFile; fileRef = 2522D3811FE6F9AB009EF2FA /* test_fsigned */; };
+		2522D39E1FE6F9E4009EF2FA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2522D3851FE6F9E0009EF2FA /* Info.plist */; };
+		2522D39F1FE6F9E4009EF2FA /* kmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D3861FE6F9E0009EF2FA /* kmem.c */; };
+		2522D3A01FE6F9E4009EF2FA /* kutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D3871FE6F9E0009EF2FA /* kutils.c */; };
+		2522D3A11FE6F9E4009EF2FA /* find_port.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D38B1FE6F9E1009EF2FA /* find_port.c */; };
+		2522D3A31FE6F9E4009EF2FA /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2522D38D1FE6F9E1009EF2FA /* README */; };
+		2522D3A51FE6F9E4009EF2FA /* symbols.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D38F1FE6F9E1009EF2FA /* symbols.c */; };
+		2522D3A81FE6F9E4009EF2FA /* async_wake.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D3961FE6F9E2009EF2FA /* async_wake.c */; };
+		2522D3A91FE6F9E4009EF2FA /* ent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2522D3971FE6F9E2009EF2FA /* ent.plist */; };
+		2522D3AA1FE6F9E4009EF2FA /* kcall.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D3981FE6F9E3009EF2FA /* kcall.c */; };
+		2522D3AC1FE6F9E4009EF2FA /* early_kalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D39B1FE6F9E4009EF2FA /* early_kalloc.c */; };
+		2522D3AD1FE6F9E4009EF2FA /* kdbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 2522D39C1FE6F9E4009EF2FA /* kdbg.c */; };
+		2522D3B81FE97ECB009EF2FA /* Respring.m in Sources */ = {isa = PBXBuildFile; fileRef = 2522D3B71FE97ECB009EF2FA /* Respring.m */; };
+		2542E7BA1FEC69C700813405 /* fun.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C50D821FEC524F00315A6E /* fun.c */; };
+		2542E7FC1FEC89D700813405 /* tar in Resources */ = {isa = PBXBuildFile; fileRef = 2542E7FB1FEC89D700813405 /* tar */; };
+		2545D92D1FF5594700719310 /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 2545D92C1FF5594600719310 /* qilin.o */; };
+		2545D9301FF5595600719310 /* sha1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 2545D92E1FF5595500719310 /* sha1.o */; };
+		2545D9311FF5595600719310 /* sha256.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 2545D92F1FF5595500719310 /* sha256.o */; };
 		25A5E0911FE57F2000CB625D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A5E0901FE57F2000CB625D /* AppDelegate.m */; };
 		25A5E0941FE57F2000CB625D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A5E0931FE57F2000CB625D /* ViewController.m */; };
 		25A5E0971FE57F2000CB625D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A5E0951FE57F2000CB625D /* Main.storyboard */; };
 		25A5E0991FE57F2000CB625D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A5E0981FE57F2000CB625D /* Assets.xcassets */; };
 		25A5E09C1FE57F2000CB625D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A5E09A1FE57F2000CB625D /* LaunchScreen.storyboard */; };
 		25A5E09F1FE57F2000CB625D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A5E09E1FE57F2000CB625D /* main.m */; };
+		25A5E0C21FE580EE00CB625D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A5E0C11FE580EE00CB625D /* IOKit.framework */; };
+		25C50D831FEC525000315A6E /* fun_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C50D801FEC524E00315A6E /* fun_objc.m */; };
+		25C50D841FEC525000315A6E /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = 25C50D811FEC524F00315A6E /* patchfinder64.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2522D37F1FE6F9AB009EF2FA /* test_fsigned.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test_fsigned.plist; sourceTree = "<group>"; };
+		2522D3811FE6F9AB009EF2FA /* test_fsigned */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = test_fsigned; sourceTree = "<group>"; };
+		2522D3851FE6F9E0009EF2FA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../../../Volumes/BACKUP/Wiruses/async_awake-fun-master/async_wake_ios/Info.plist"; sourceTree = "<group>"; };
+		2522D3861FE6F9E0009EF2FA /* kmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kmem.c; sourceTree = "<group>"; };
+		2522D3871FE6F9E0009EF2FA /* kutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kutils.c; sourceTree = "<group>"; };
+		2522D3881FE6F9E0009EF2FA /* symbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbols.h; sourceTree = "<group>"; };
+		2522D3891FE6F9E0009EF2FA /* kdbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdbg.h; sourceTree = "<group>"; };
+		2522D38A1FE6F9E1009EF2FA /* kutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kutils.h; sourceTree = "<group>"; };
+		2522D38B1FE6F9E1009EF2FA /* find_port.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = find_port.c; sourceTree = "<group>"; };
+		2522D38D1FE6F9E1009EF2FA /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		2522D38F1FE6F9E1009EF2FA /* symbols.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = symbols.c; sourceTree = "<group>"; };
+		2522D3911FE6F9E1009EF2FA /* kcall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kcall.h; sourceTree = "<group>"; };
+		2522D3921FE6F9E2009EF2FA /* find_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = find_port.h; sourceTree = "<group>"; };
+		2522D3931FE6F9E2009EF2FA /* async_wake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = async_wake.h; sourceTree = "<group>"; };
+		2522D3941FE6F9E2009EF2FA /* kmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kmem.h; sourceTree = "<group>"; };
+		2522D3961FE6F9E2009EF2FA /* async_wake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = async_wake.c; sourceTree = "<group>"; };
+		2522D3971FE6F9E2009EF2FA /* ent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ent.plist; sourceTree = "<group>"; };
+		2522D3981FE6F9E3009EF2FA /* kcall.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kcall.c; sourceTree = "<group>"; };
+		2522D39A1FE6F9E3009EF2FA /* arm64_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arm64_state.h; sourceTree = "<group>"; };
+		2522D39B1FE6F9E4009EF2FA /* early_kalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = early_kalloc.c; sourceTree = "<group>"; };
+		2522D39C1FE6F9E4009EF2FA /* kdbg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kdbg.c; sourceTree = "<group>"; };
+		2522D39D1FE6F9E4009EF2FA /* early_kalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = early_kalloc.h; sourceTree = "<group>"; };
+		2522D3B71FE97ECB009EF2FA /* Respring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Respring.m; sourceTree = "<group>"; };
+		2542E7FB1FEC89D700813405 /* tar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tar; sourceTree = "<group>"; };
+		2545D92B1FF5590500719310 /* qilin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qilin.h; sourceTree = "<group>"; };
+		2545D92C1FF5594600719310 /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qilin.o; sourceTree = "<group>"; };
+		2545D92E1FF5595500719310 /* sha1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = sha1.o; sourceTree = "<group>"; };
+		2545D92F1FF5595500719310 /* sha256.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = sha256.o; sourceTree = "<group>"; };
 		25A5E08C1FE57F2000CB625D /* iOSTB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A5E08F1FE57F2000CB625D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25A5E0901FE57F2000CB625D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +76,15 @@
 		25A5E09B1FE57F2000CB625D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25A5E09D1FE57F2000CB625D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25A5E09E1FE57F2000CB625D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25A5E0C11FE580EE00CB625D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = "../../../../../../Volumes/BACKUP/Wiruses/v0rtex-S-master/v0rtex/IOKit.framework"; sourceTree = "<group>"; };
+		25A5E0C31FE5820600CB625D /* kill */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = kill; path = "../../../async_wake-master/async_wake_ios/iosbinpack64/bin/kill"; sourceTree = "<group>"; };
+		25A5E0F11FE5861E00CB625D /* NSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		25C50D7D1FEC524D00315A6E /* patchfinder64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = patchfinder64.h; path = fun/patchfinder64.h; sourceTree = SOURCE_ROOT; };
+		25C50D7E1FEC524E00315A6E /* fun_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fun_objc.h; path = fun/fun_objc.h; sourceTree = SOURCE_ROOT; };
+		25C50D7F1FEC524E00315A6E /* fun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fun.h; path = fun/fun.h; sourceTree = SOURCE_ROOT; };
+		25C50D801FEC524E00315A6E /* fun_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fun_objc.m; path = fun/fun_objc.m; sourceTree = SOURCE_ROOT; };
+		25C50D811FEC524F00315A6E /* patchfinder64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = patchfinder64.c; path = fun/patchfinder64.c; sourceTree = SOURCE_ROOT; };
+		25C50D821FEC524F00315A6E /* fun.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fun.c; path = fun/fun.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2545D9301FF5595600719310 /* sha1.o in Frameworks */,
+				2545D92D1FF5594700719310 /* qilin.o in Frameworks */,
+				25A5E0C21FE580EE00CB625D /* IOKit.framework in Frameworks */,
+				2545D9311FF5595600719310 /* sha256.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +105,10 @@
 		25A5E0831FE57F2000CB625D = {
 			isa = PBXGroup;
 			children = (
+				25A5E0C31FE5820600CB625D /* kill */,
 				25A5E08E1FE57F2000CB625D /* iOSTB */,
 				25A5E08D1FE57F2000CB625D /* Products */,
+				25A5E0C01FE580EE00CB625D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +123,41 @@
 		25A5E08E1FE57F2000CB625D /* iOSTB */ = {
 			isa = PBXGroup;
 			children = (
+				2545D92E1FF5595500719310 /* sha1.o */,
+				2545D92F1FF5595500719310 /* sha256.o */,
+				2545D92C1FF5594600719310 /* qilin.o */,
+				2545D92B1FF5590500719310 /* qilin.h */,
+				2542E7FB1FEC89D700813405 /* tar */,
+				25C50D7E1FEC524E00315A6E /* fun_objc.h */,
+				25C50D801FEC524E00315A6E /* fun_objc.m */,
+				25C50D821FEC524F00315A6E /* fun.c */,
+				25C50D7F1FEC524E00315A6E /* fun.h */,
+				25C50D811FEC524F00315A6E /* patchfinder64.c */,
+				25C50D7D1FEC524D00315A6E /* patchfinder64.h */,
+				2522D3B71FE97ECB009EF2FA /* Respring.m */,
+				2522D3811FE6F9AB009EF2FA /* test_fsigned */,
+				2522D37F1FE6F9AB009EF2FA /* test_fsigned.plist */,
+				2522D39A1FE6F9E3009EF2FA /* arm64_state.h */,
+				2522D3961FE6F9E2009EF2FA /* async_wake.c */,
+				2522D3931FE6F9E2009EF2FA /* async_wake.h */,
+				2522D39B1FE6F9E4009EF2FA /* early_kalloc.c */,
+				2522D39D1FE6F9E4009EF2FA /* early_kalloc.h */,
+				2522D3971FE6F9E2009EF2FA /* ent.plist */,
+				2522D38B1FE6F9E1009EF2FA /* find_port.c */,
+				2522D3921FE6F9E2009EF2FA /* find_port.h */,
+				2522D3851FE6F9E0009EF2FA /* Info.plist */,
+				2522D3981FE6F9E3009EF2FA /* kcall.c */,
+				2522D3911FE6F9E1009EF2FA /* kcall.h */,
+				2522D39C1FE6F9E4009EF2FA /* kdbg.c */,
+				2522D3891FE6F9E0009EF2FA /* kdbg.h */,
+				2522D3861FE6F9E0009EF2FA /* kmem.c */,
+				2522D3941FE6F9E2009EF2FA /* kmem.h */,
+				2522D3871FE6F9E0009EF2FA /* kutils.c */,
+				2522D38A1FE6F9E1009EF2FA /* kutils.h */,
+				2522D38D1FE6F9E1009EF2FA /* README */,
+				2522D38F1FE6F9E1009EF2FA /* symbols.c */,
+				2522D3881FE6F9E0009EF2FA /* symbols.h */,
+				25A5E0F11FE5861E00CB625D /* NSTask.h */,
 				25A5E08F1FE57F2000CB625D /* AppDelegate.h */,
 				25A5E0901FE57F2000CB625D /* AppDelegate.m */,
 				25A5E0921FE57F2000CB625D /* ViewController.h */,
@@ -69,6 +169,14 @@
 				25A5E09E1FE57F2000CB625D /* main.m */,
 			);
 			path = iOSTB;
+			sourceTree = "<group>";
+		};
+		25A5E0C01FE580EE00CB625D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A5E0C11FE580EE00CB625D /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +237,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2522D3A91FE6F9E4009EF2FA /* ent.plist in Resources */,
+				2542E7FC1FEC89D700813405 /* tar in Resources */,
+				2522D3A31FE6F9E4009EF2FA /* README in Resources */,
+				2522D39E1FE6F9E4009EF2FA /* Info.plist in Resources */,
+				2522D3821FE6F9AC009EF2FA /* test_fsigned.plist in Resources */,
+				2522D3841FE6F9AC009EF2FA /* test_fsigned in Resources */,
 				25A5E09C1FE57F2000CB625D /* LaunchScreen.storyboard in Resources */,
 				25A5E0991FE57F2000CB625D /* Assets.xcassets in Resources */,
 				25A5E0971FE57F2000CB625D /* Main.storyboard in Resources */,
@@ -142,8 +256,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2522D3AD1FE6F9E4009EF2FA /* kdbg.c in Sources */,
 				25A5E0941FE57F2000CB625D /* ViewController.m in Sources */,
+				25C50D841FEC525000315A6E /* patchfinder64.c in Sources */,
+				2522D39F1FE6F9E4009EF2FA /* kmem.c in Sources */,
+				25C50D831FEC525000315A6E /* fun_objc.m in Sources */,
+				2522D3A81FE6F9E4009EF2FA /* async_wake.c in Sources */,
+				2522D3AC1FE6F9E4009EF2FA /* early_kalloc.c in Sources */,
+				2522D3B81FE97ECB009EF2FA /* Respring.m in Sources */,
+				2522D3A51FE6F9E4009EF2FA /* symbols.c in Sources */,
 				25A5E09F1FE57F2000CB625D /* main.m in Sources */,
+				2522D3A11FE6F9E4009EF2FA /* find_port.c in Sources */,
+				2522D3AA1FE6F9E4009EF2FA /* kcall.c in Sources */,
+				2542E7BA1FEC69C700813405 /* fun.c in Sources */,
+				2522D3A01FE6F9E4009EF2FA /* kutils.c in Sources */,
 				25A5E0911FE57F2000CB625D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +328,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -257,6 +384,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -279,9 +407,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KX7EYYHXUS;
+				DEVELOPMENT_TEAM = H3LNMTCCDQ;
 				INFOPLIST_FILE = iOSTB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSTB",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.docaiden.iOSTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,9 +426,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KX7EYYHXUS;
+				DEVELOPMENT_TEAM = H3LNMTCCDQ;
 				INFOPLIST_FILE = iOSTB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSTB",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.docaiden.iOSTB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
