@@ -18,72 +18,7 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import "NSTask.h"
 #import "qilin.h"
-#include "Terminal/VT100Screen.h"
-#include "Terminal/VT100Terminal.h"
-#import "Terminal/SubProcess.h"
 
-NSArray *nameArr;
-
-int execprog(const char *prog, const char* args[]) {
-    int rv;
-    
-    if (args == NULL) {
-        args = (const char **)&(const char*[]){ prog, NULL };
-    }
-    
-    const char *logfile = [NSString stringWithFormat:@"/tmp/%@-%lu",
-                           [[NSMutableString stringWithUTF8String:prog] stringByReplacingOccurrencesOfString:@"/" withString:@"_"],
-                           time(NULL)].UTF8String;
-    printf("Spawning '%s' with [", prog);
-    for(const char **arg = args; *arg != NULL; ++arg) {
-        printf("'%s' ", *arg);
-    }
-    printf("] to file %s\n", logfile);
-    
-    posix_spawn_file_actions_t child_fd_actions;
-    if ((rv = posix_spawn_file_actions_init (&child_fd_actions))) {
-        perror ("posix_spawn_file_actions_init");
-        return rv;
-    }
-    if ((rv = posix_spawn_file_actions_addopen (&child_fd_actions, STDOUT_FILENO, logfile,
-                                                O_WRONLY | O_CREAT | O_TRUNC, 0666))) {
-        perror ("posix_spawn_file_actions_addopen");
-        return rv;
-    }
-    if ((rv = posix_spawn_file_actions_adddup2 (&child_fd_actions, STDOUT_FILENO, STDERR_FILENO))) {
-        perror ("posix_spawn_file_actions_adddup2");
-        return rv;
-    }
-    
-    pid_t pd;
-    if ((rv = posix_spawn(&pd, prog, &child_fd_actions, NULL, (char**)args, NULL))) {
-        printf("posix_spawn error: %d (%s)", rv, strerror(rv));
-        return rv;
-    }
-    
-    int status;
-    waitpid(pd, &status, 0);
-    printf("'%s' exited with %d (sig %d)\n", prog, WEXITSTATUS(status), WTERMSIG(status));
-    
-    char buf[65] = {0};
-    int fd = open(logfile, O_RDONLY);
-    if (fd == -1) {
-        perror("open logfile");
-        return 1;
-    }
-    
-    printf("contents of %s: \n ------------------------- \n", logfile);
-    while(read(fd, buf, sizeof(buf) - 1) == sizeof(buf) - 1) {
-        printf("%s", buf);
-    }
-    printf("%s", buf);
-    printf("\n-------------------------\n");
-    
-    close(fd);
-    remove(logfile);
-    
-    return 0;
-}
 
 NSArray* NSLS(NSString *path) {
     return [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:NULL];
@@ -109,18 +44,6 @@ const char* pathRelativeToDocuments(const char *path) {
     [super viewDidLoad];
 
 
-    // Do any additional setup after loading the view, typically from a nib.
-//    NSArray* nameArr = [NSArray arrayWithObjects: @"K", @"b", @"y", @"g",
-//                        @"x", @"f", @"a", @"0",
-//                        @"l", @"O", @"V", @"T", @"Z",
-//                        @"S", @"M", @"H", @"N", @"J",
-//                    @"r",@"u",@"i",@"e",@"w",@"c",@"d",@"q",@"p", nil];
-//}
-//NSArray* nameArr2 = [NSArray arrayWithObjects: @"I", @"b", @"y", @"g",
-//                    @"x", @"f", @"a", @"0",
-//                    @"l", @"O", @"V", @"T", @"Z",
-//                    @"S", @"M", @"H", @"N", @"J",
-//                    @"r",@"u",@"i",@"e",@"w",@"c",@"d",@"q",@"p", nil];
 }
 
 
